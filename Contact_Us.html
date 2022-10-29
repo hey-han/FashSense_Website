@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Rate Us</title>
+    <meta charset="utf-8">
+</head>
+
+
+<body>
+
+    <div class="container">
+        <header>
+    
+            <script type="text/javascript" src="script/javascript/fill.js"></script>
+        </header>
+    </div>
+    <header>
+
+        <div class="navbar">
+            <a href="index.html"><img src="pics/logo/logo 2.png" alt="Homepage" id="homelogo"></a>
+            <a href="index.html">Home</a>
+            <a href="Male.php">Male</a>
+            <a href="Female.php">Female</a>
+            <a href="Cart.php">Cart</a>
+            <a href="News.html">News</a>
+            <a href="Contact_Us.html">Contact Us</a>
+        </div>
+
+        <div class="content">
+            <h1 class="title_1">Contact Us</h1>
+            <h2>ANY ISSUE? DROP US A FEEDBACK FORM, WE WILL GET BACK TO YOU ASAP!</h2>
+
+            <form action="show_post.php" method="post" id="JobsForm">
+
+                <label for="customername">&#42;Name:</label>
+                <input type="text" name="customername" id="customername" size=40 required
+                    placeholder="Enter your name here" onchange="validateName()">
+                <label for="email">&#42;E-mail:</label>
+                <input type="email" name="email" id="email" size=40 required placeholder="Enter your Email-ID here"
+                    onchange="validateEmail()">
+                <label for="experience">&#42;Issues:</label>
+                <textarea name="comments" id="comments" rows="4" cols="40" required
+                    placeholder="Enter your feedback here"></textarea>
+                <div class="button">
+                    <input type="submit" float="right" value="Send" onsubmit="validateForm()" />
+                    <input type="reset" value="Clear" />
+                </div>
+            </form>
+
+            <script type="text/javascript">
+                document.getElementbyId("JobsForm").onsumbit = validateForm;
+            </script>
+        </div>
+
+
+    </header>
+
+    <footer>Copyright &copy; 2022 Fashsense<br>
+        <a href="mailto: fashsense@gmail.com">Contact Us</a>
+    </footer>
+</body>
+
+</html>
